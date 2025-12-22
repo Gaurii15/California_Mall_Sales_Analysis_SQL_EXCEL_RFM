@@ -1,4 +1,5 @@
 --creating tables
+--Creating customer Table
 CREATE TABLE customers (
     customer_id VARCHAR(20) PRIMARY KEY,
     gender VARCHAR(10),
@@ -9,7 +10,7 @@ CREATE TABLE customers (
 );
 
 SELECT * FROM customers;
-
+--creating shopping_mall table
 CREATE TABLE shopping_mall (
     shopping_mall VARCHAR(100) PRIMARY KEY,
     construction_year INT,
@@ -17,9 +18,10 @@ CREATE TABLE shopping_mall (
     location VARCHAR(50),
     store_count INT
 );
+
 SELECT * FROM shopping_mall;
 
-
+--Creating Sales table
 CREATE TABLE sales (
     invoice_no VARCHAR(20) PRIMARY KEY,
     customer_id VARCHAR(20),
@@ -224,6 +226,7 @@ SELECT
     END AS customer_segment
 
 FROM rfm_scores;
+
 
 
 
